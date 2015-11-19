@@ -24,6 +24,7 @@
         <div class="reveal">
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+<!------------------------------------------------------------------->
                 <section>
                     <h2>Sustaining Consistent Video Presentation</h2>
                     <h3><a href="https://twitter.com/search?q=%23amia15">#amia15</a> 2015-11-21</h3>
@@ -35,12 +36,14 @@
                         Kelly? (Kelly, do you want kick this off?) Instead of video decks and projectors, archivists increasingly rely on software to render an authentic presentation of audiovisual content. However, the same file may appear differently from one player to another with discrepancies in significant characteristics such as color, contrast, aspect ratio, or even duration. This presentation investigates aspects of the design and decisions within digital media that impact the consistency of video presentation from one playback device to another. Archival strategies such as migration, emulation, and normalization are evaluated according to their potential impact on presentation consistency. Although the technological diversity and complexity of codecs, containers and implementations within digital video collections challenge one-sized presentation solutions; the panel will go behind-the-scenes within playback software. Details and qualities about digital video that are often unseen shall be scrutinized in order to provide more technical control over digital content and better understanding of the challenges involved in sustaining consistent video presentation.
                     </aside>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <img src="http://www.tate.org.uk/sites/all/themes/tatebase/images/tate-head-logo_2.png">
                     <p>
                         <small> <a href="http://www.tate.org.uk/research/publications/sustaining-consistent-video-presentation"> http://www.tate.org.uk/research/publications/sustaining-consistent-video-presentation</a></small>
                     </p>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <h2>Guess What?</h2>
                     <p>
@@ -50,12 +53,16 @@
                         @KellyHaydon, Is this slide worth it?
                     </aside>
                 </section>
+<!------------------------------------------------------------------->
                 <section> 
+                    <aside class="notes">
+                       Kelly:  Inspired by discussions within the Presto4U Video Art Community of Practice Group, the paper addresses common conundrums experienced by conservators when presenting digital works using the familiar players of our day, namely Apple’s Quicktime 7 and Quicktime 10, and their open-source, ffmpeg-based counterpart, VLC. 
+                    </aside>
                     <table>
                         <tr>
-                            <td>[img]</td>
-                            <td>[img]</td>
-                            <td>[img]</td>
+                            <td>[logo]</td>
+                            <td>[logo]</td>
+                            <td>[logo]</td>
                         </tr>
                         <tr>
                             <td>Quicktime 7</td>
@@ -64,6 +71,37 @@
                         </tr>
                     </table>
                 </section>
+<!------------------------------------------------------------------->
+                <section>
+                    <aside class="notes">
+                        Kelly: For my colleagues and myself in Bay Area Video Coalition’s preservation department,  the paper’s publication was serendipitous, arriving at a time we were struggling to understand why files the same collection we were digitizing were opening up in different frame sizes in Quicktime 7. 
+                    </aside>
+                    <table>
+                        <tr>
+                            <td>[img]</td>
+                            <td>[img]</td>
+                            <td>[img]</td>
+                        </tr>
+                        <tr>Quicktime 7</tr>
+                        <tr>Quicktime 10</tr>
+                        <tr>VLC</tr>
+                    </table>
+                </section>
+<!------------------------------------------------------------------->
+                <section>
+                    <aside class="notes">
+                       Kelly: We eventually traced the issue to the recent introduction of an AJA-made capture card to our Blackmagic-based workflow; Quicktime 7 was reacting differently to the slight variations in encodings between the two makes. 
+                    </aside>
+                    <table>
+                        <tr>
+                            <td>[img]</td>
+                            <td>[img]</td>
+                        </tr>
+                        <tr>Blackmagic Encoding</tr>
+                        <tr>AJA Encoding</tr>
+                    </table>
+                </section>
+<!------------------------------------------------------------------->
                 <section>
                     <h2>Approaches and Attempts</h2>
                     <section>
@@ -85,6 +123,7 @@
                             Dave: chats about the challenge of av emulation, system dependencies of QtKit and AVFoundation, plugins, etc. Open files. Notes about VLC abilities (old versions, selfcontained), cross platform. "Often video players rely on system codec libraries or audio-visual frameworks working behind the scenes, so it can be challenging to determine what exactly is necessary to document emulation sufficiently." "Particularly notable will be the files within QuickTime’s component libraries such as those within /Library/QuickTime or /System/Library/QuickTime. The component files within these directories are used to decode or demux (demultiplex) specific audio-visual formats. Some applications will install components within these folders during installation so the additional features will also affect any application using QuickTime Pro 7. Two computers may both use the same version of QuickTime and same operating system but if the component libraries differ, the players may work inconsistently."
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <p class="fragment">
                             <p>VLC</p>
@@ -95,14 +134,17 @@
                         <h2 style="color:#fff;text-shadow:1px 1px 8px #000;">Normalization</h2>
                         <p class="fragment" style="color:#fff;text-shadow:1px 1px 8px #000;">When following a strategy of normalisation, content could be reformatted to a single format (or possibly to one of a short list of formats) that the conservator is better able to control technically.</p>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <img src="img/paper_print_lg.jpg"/>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Migration</h2>
                         <p>In a migration strategy the media may be maintained as it is. The conservator would track and define its technical qualities and determine how to play the file back properly with modern players.</p>
                     </section>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <section>
                         <h2>Significant Characteristics</h2>
@@ -110,36 +152,41 @@
                             Kelly: Video file formats are characterized by data streams. These streams contain technical information about the file that is interpreted by playback software, often to varying results. A typical video file has one stream for video and one or more streams for audio. Other streams can contain timecode, captions, and general information such as file size and duration, etc. The significant characteristics that affect playback and are discussed here are those found in the video stream: aspect ratio, frame size, chrominance and luminance information, and interlacement (or scan types). 
                             </aside>
                     </section>
-                    <section>
-                        <img src="img/adobe_dar.png"/>
-                    </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Aspect Ratio</h2>
                             <p>The ratio of the width of the presented frame to the height of the presented frame</p>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Frame size</h2>
                         <p>The width and height of the image (in pixels) encoded in the stream</p>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <p>luigi 16x16 png</p>
                         <img src="img/luigi_little.png"/>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <p>Bicubic Luigi / Bilinear Luigi / Neighbor Luigi</p>
                         <img src="img/luigi_stack.jpg"/>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <img src="img/mrpreservation.jpg"/>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <p>Bicubic Mr. Preservation / Bilinear Mr. Preservation / Neighbor Mr. Preservation</p>
                         <img src="img/mrpreservation_stack.jpg"/>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Colorspace and Conversion Matrixes</h2>
                         <p></p>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Chroma subsampling</h2>
                         <p></p>
@@ -148,6 +195,7 @@
                             Dave: rants bout it
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Interlacement</h2>
                         <p></p>
@@ -156,6 +204,7 @@
                             Dave: rants bout it
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>YUV sample range</h2>
                         <p>Full range vs Broadcast range</p>
@@ -164,11 +213,13 @@
                         </aside>
                     </section>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <section>
                         <h2>Codec specific considerations</h2>
                         <p></p>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>h264</h2>
                         <p></p>
@@ -176,6 +227,7 @@
                             Dave: h264 and 4:2:0, QuickTime 7 h264 decoder issues
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>DV</h2>
                         <p></p>
@@ -184,6 +236,7 @@
                             Dave: On DV on chroma subsampling problems
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>Quicktime 7</h2>
                         <table> 
@@ -197,6 +250,7 @@
                             </tr>
                         </table>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>MediaInfo</h2>
                         <p></p>
@@ -204,15 +258,18 @@
                             Dave: Show metadata reporting on container and on codec, discuss conflicts, presumptions, and inferences. Show examples of under-described capture files.
                         </aside>
                     </section>
+<!------------------------------------------------------------------->
                     <section>
                         <h2>MediaTrace</h2>
                         <p></p>
                     </section>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <h2>Conclusions</h2>
                     <p></p>
                 </section>
+<!------------------------------------------------------------------->
                 <section>
                     <h2>That's it</h2>
                     <p>"thanks"</p>
